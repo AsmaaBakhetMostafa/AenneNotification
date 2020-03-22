@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.AspNetCore.SignalR;
 using NotificationApp.API;
+using NotificationApp.DTO;
 using NotificationApp.DTO.Driver;
 using NotificationApp.DTO.Financial;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Device.Location;
 using System.Linq;
@@ -18,8 +20,9 @@ namespace NotificationApp.Hubs
         static List<MatchedDriverVehicalDto> _MatchedDriverVehicalDto = new List<MatchedDriverVehicalDto>();
         
         APIConsume _APIConsume = new APIConsume();
-
-
+        private static readonly ConcurrentDictionary<string, UserHubModels> Users =
+                            new ConcurrentDictionary<string, UserHubModels>(StringComparer.InvariantCultureIgnoreCase);
+        
 
         ///1-Fire Push Rash Hours
         ///3-Push another notification  with Price Cost To Driver
@@ -60,15 +63,24 @@ namespace NotificationApp.Hubs
 
             for (int i = 0; i < _MatchedDriverVehicalDto.Count; i++)
             {
+                //var LstConnIDs = Users.
+                //                    Where(x => x.Key == Client_Id.ToString() )
+                //                     .Select(x => x.Value).FirstOrDefault();
+                 await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver", Client_Id, Client_Pickup_Long,  Client_Pickup_Latt);
+
                 //push to specific driver 
                 //  await Clients.User(_MatchedDriverVehicalDto[i].Driver_Id.ToString()).SendAsync("NotifiedCurrentLongAndLattForDriver");
-                await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver", Client_Id, Client_Pickup_Long,  Client_Pickup_Latt);
+                //foreach (var ConnID in LstConnIDs.ConnectionIds)
+                //{
+                //    await Clients.Client(ConnID).SendAsync("NotifiedCurrentLongAndLattForDriver", Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
 
+                //    // await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver", Client_Id, Client_Pickup_Long,  Client_Pickup_Latt);
+                //}
             }
-           
+
         }
 
-
+      
         public async Task GetCurrentLongAndLattForDriver(int Client_Id,double Client_Pickup_Long,double Client_Pickup_Latt, int Driver_Id, double Driver_Pickup_Long, double Driver_Pickup_Latt)
         {
 
@@ -94,8 +106,8 @@ namespace NotificationApp.Hubs
                     }
                 });
 
-                if (AllMatchedDriverVehicalDto.Count == _MatchedDriverVehicalDto.Count)
-                {
+                //if (AllMatchedDriverVehicalDto.Count == _MatchedDriverVehicalDto.Count)
+                //{
 
                     MatchedDriverVehicalDto nearestdriverobj = GetNearestDriver(Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
                     //  Push Notification To Nearest Driver
@@ -103,15 +115,15 @@ namespace NotificationApp.Hubs
                     {
                         PushToNearestLongAndLattOfDriverForDriver(Client_Id, Driver_Id, Client_Pickup_Long, Client_Pickup_Latt);//nearestdriverobj.Driver_Id, nearestdriverobj.Driver_Pickup_Long, nearestdriverobj.Driver_Pickup_Latt);
                     }
-                }
+              //  }
             }
         }
-        public void PushToNearestLongAndLattOfDriverForDriver(int Client_Id, int DriverID, double Client_Pickup_Long, double Client_Pickup_Latt)
+        public void PushToNearestLongAndLattOfDriverForDriver(int Client_Id1, int DriverID, double Client_Pickup_Long1, double Client_Pickup_Latt1)
         {
             //push Notification to Driver
               // Clients.User(DriverID.ToString()).SendAsync("NotifiedNearestDriverLongAndLattForDriver",DriverID, Driver_Pickup_Long, Driver_Pickup_Latt);
            //Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", Client_Id, Driver_Pickup_Long, Driver_Pickup_Latt);
-           Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
+           Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", Client_Id1, Client_Pickup_Long1, Client_Pickup_Latt1);
         }
 
 
@@ -205,7 +217,57 @@ namespace NotificationApp.Hubs
         {
             AllMatchedDriverVehicalDto.Remove(AllMatchedDriverVehicalDto.Single(s => s.Client_Id == Client_Id));
         }
+        public async Task OnConnectedAsync(string UserID,int UserType)
+        {
+            //string userName = Context.User.Identity.Name;
+            string connectionId = Context.ConnectionId;
 
+            var user = Users.GetOrAdd(UserID, _ => new UserHubModels
+            {
+                UserID = UserID,
+                UserType= UserType,
+                ConnectionIds = new HashSet<string>()
+            });
 
-    }
+            //lock (user.ConnectionIds)
+            //{
+            //    user.ConnectionIds.Add(connectionId);
+            //    if (user.ConnectionIds.Count == 1)
+            //    {
+            //        Clients.Others.SendAsync("userConnected",UserID);
+            //    }
+            //}
+
+           // return base.OnConnectedAsync();
+        }
+
+        public async Task OnDisconnectedAsync(string UserID,int UserType)
+        {
+            string userName = Context.User.Identity.Name;
+            string connectionId = Context.ConnectionId;
+
+            UserHubModels user;
+            Users.TryGetValue(userName, out user);
+
+            if (user != null)
+            {
+                lock (user.ConnectionIds)
+                {
+                    user.ConnectionIds.RemoveWhere(cid => cid.Equals(connectionId));
+                    //if (!user.ConnectionIds.Any())
+                    //{
+                    //    UserHubModels removedUser;
+                    //    Users.TryRemove(userName, out removedUser);
+                    //    //Clients.Others.userDisconnected(userName);
+                    //    Clients.Others.SendAsync("userDisconnected", userName);
+
+                    //}
+                }
+            }
+
+          // return base.OnDisconnectedAsync(UserID,UserType);
+        }
+    
+
+}
 }

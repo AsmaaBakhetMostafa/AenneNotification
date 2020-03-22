@@ -149,7 +149,6 @@ D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\bin\Debug\n
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\bin\Debug\netcoreapp2.1\NotificationApp.pdb
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\bin\Debug\netcoreapp2.1\NotificationApp.Views.dll
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\bin\Debug\netcoreapp2.1\NotificationApp.Views.pdb
-D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.csprojAssemblyReference.cache
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.RazorAssemblyInfo.cache
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.RazorAssemblyInfo.cs
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.AssemblyInfoInputs.cache
@@ -173,3 +172,4 @@ D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\n
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.dll
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.pdb
 D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.csproj.CopyComplete
+D:\Asmaa\Venusera\Aenny\Notification\Solution\200322\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.csprojAssemblyReference.cache
