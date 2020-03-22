@@ -15,6 +15,8 @@ namespace NotificationApp.Hubs
     public class TripNotificationHub : Hub
     {
         static List<AllDriverPickUpLocationsDto> AllMatchedDriverVehicalDto = new List<AllDriverPickUpLocationsDto>();
+        static List<MatchedDriverVehicalDto> _MatchedDriverVehicalDto = new List<MatchedDriverVehicalDto>();
+        
         APIConsume _APIConsume = new APIConsume();
 
 
@@ -50,9 +52,8 @@ namespace NotificationApp.Hubs
         ///3-Push another notification  with Driver Id and Trip_Pickup_Long and Trip_Pickup_Latt of Driver
         public async Task GetMatchedDriver(int Client_Id, int Healty_number, int Handicapped_Number, double Client_Pickup_Long, double Client_Pickup_Latt)
         {
-
-
-           List<MatchedDriverVehicalDto> _MatchedDriverVehicalDto = _APIConsume.GetMatchedDriver(Healty_number, Handicapped_Number).ToList();
+          
+             _MatchedDriverVehicalDto = _APIConsume.GetMatchedDriver(Healty_number, Handicapped_Number).ToList();
 
             //await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver");
 
@@ -61,23 +62,14 @@ namespace NotificationApp.Hubs
             {
                 //push to specific driver 
                 //  await Clients.User(_MatchedDriverVehicalDto[i].Driver_Id.ToString()).SendAsync("NotifiedCurrentLongAndLattForDriver");
-                await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver");
+                await Clients.All.SendAsync("NotifiedCurrentLongAndLattForDriver", Client_Id, Client_Pickup_Long,  Client_Pickup_Latt);
 
             }
-            if (AllMatchedDriverVehicalDto.Count > 0)
-            {
-
-                MatchedDriverVehicalDto nearestdriverobj = GetNearestDriver(Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
-                //  Push Notification To Nearest Driver
-                if (nearestdriverobj != null)
-                {
-                    PushToNearestLongAndLattOfDriverForDriver(Client_Id, nearestdriverobj.Driver_Id, nearestdriverobj.Driver_Pickup_Long, nearestdriverobj.Driver_Pickup_Latt);
-                }
-            }
+           
         }
 
 
-        public async Task GetCurrentLongAndLattForDriver(int Client_Id, int Driver_Id, double Driver_Pickup_Long, double Driver_Pickup_Latt)
+        public async Task GetCurrentLongAndLattForDriver(int Client_Id,double Client_Pickup_Long,double Client_Pickup_Latt, int Driver_Id, double Driver_Pickup_Long, double Driver_Pickup_Latt)
         {
 
             if (Driver_Id != 0)
@@ -102,13 +94,24 @@ namespace NotificationApp.Hubs
                     }
                 });
 
+                if (AllMatchedDriverVehicalDto.Count == _MatchedDriverVehicalDto.Count)
+                {
+
+                    MatchedDriverVehicalDto nearestdriverobj = GetNearestDriver(Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
+                    //  Push Notification To Nearest Driver
+                    if (nearestdriverobj != null)
+                    {
+                        PushToNearestLongAndLattOfDriverForDriver(Client_Id, Driver_Id, Client_Pickup_Long, Client_Pickup_Latt);//nearestdriverobj.Driver_Id, nearestdriverobj.Driver_Pickup_Long, nearestdriverobj.Driver_Pickup_Latt);
+                    }
+                }
             }
         }
-        public void PushToNearestLongAndLattOfDriverForDriver(int Client_Id, int DriverID, double Driver_Pickup_Long, double Driver_Pickup_Latt)
+        public void PushToNearestLongAndLattOfDriverForDriver(int Client_Id, int DriverID, double Client_Pickup_Long, double Client_Pickup_Latt)
         {
             //push Notification to Driver
-               Clients.User(DriverID.ToString()).SendAsync("NotifiedNearestDriverLongAndLattForDriver",DriverID, Driver_Pickup_Long, Driver_Pickup_Latt);
-           //  Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", DriverID, Driver_Pickup_Long, Driver_Pickup_Latt);
+              // Clients.User(DriverID.ToString()).SendAsync("NotifiedNearestDriverLongAndLattForDriver",DriverID, Driver_Pickup_Long, Driver_Pickup_Latt);
+           //Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", Client_Id, Driver_Pickup_Long, Driver_Pickup_Latt);
+           Clients.All.SendAsync("NotifiedNearestDriverLongAndLattForDriver", Client_Id, Client_Pickup_Long, Client_Pickup_Latt);
         }
 
 
