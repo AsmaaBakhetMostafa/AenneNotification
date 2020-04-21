@@ -1,0 +1,431 @@
+2020-04-19 10:19:43.465 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 10:19:43.465 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:19:43.782 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 10:19:43.913 +02:00 [Information] Request finished in 388.567ms 200 
+2020-04-19 10:19:44.696 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:19:45.002 +02:00 [Information] Executed action "/Index" in 295.3703ms
+2020-04-19 10:19:45.437 +02:00 [Information] Request finished in 1565.5161ms 200 text/html; charset=utf-8
+2020-04-19 10:19:45.463 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:19:45.466 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:19:45.469 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:19:45.472 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:19:45.475 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:19:45.581 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:19:45.584 +02:00 [Information] Request finished in 142.1896ms 200 text/css
+2020-04-19 10:19:45.587 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:19:45.664 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:19:45.669 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:19:45.682 +02:00 [Information] Request finished in 14.6674ms 200 application/javascript
+2020-04-19 10:19:45.691 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:19:45.698 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:19:45.728 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:19:45.732 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:19:45.734 +02:00 [Information] Request finished in 253.027ms 200 application/javascript
+2020-04-19 10:19:45.737 +02:00 [Information] Request finished in 292.902ms 200 application/javascript
+2020-04-19 10:19:45.742 +02:00 [Information] Request finished in 289.4654ms 200 application/javascript
+2020-04-19 10:19:45.745 +02:00 [Information] Request finished in 301.8983ms 200 text/css
+2020-04-19 10:19:45.794 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:19:45.798 +02:00 [Information] Request finished in 209.8422ms 200 application/javascript
+2020-04-19 10:20:57.658 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:20:57.673 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:20:57.746 +02:00 [Information] Executed action "/Index" in 30.721ms
+2020-04-19 10:20:57.769 +02:00 [Information] Request finished in 95.5103ms 200 text/html; charset=utf-8
+2020-04-19 10:20:57.827 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:20:57.838 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:20:57.840 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:20:57.846 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:20:57.853 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:20:57.855 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:20:57.894 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:20:57.912 +02:00 [Information] Request finished in 80.7306ms 200 text/css
+2020-04-19 10:20:57.921 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:20:57.926 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:20:57.940 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:20:57.949 +02:00 [Information] Request finished in 110.4472ms 200 application/javascript
+2020-04-19 10:20:57.952 +02:00 [Information] Request finished in 125.9698ms 200 application/javascript
+2020-04-19 10:20:57.960 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:20:57.971 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:20:57.975 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:20:57.979 +02:00 [Information] Request finished in 112.7278ms 200 application/javascript
+2020-04-19 10:20:57.980 +02:00 [Information] Request finished in 63.314ms 200 application/javascript
+2020-04-19 10:20:57.984 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:20:57.987 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:20:57.989 +02:00 [Information] Request finished in 131.8997ms 200 text/css
+2020-04-19 10:20:57.991 +02:00 [Information] Request finished in 138.9865ms 200 application/javascript
+2020-04-19 10:20:57.995 +02:00 [Information] Policy execution successful.
+2020-04-19 10:21:02.322 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:21:02.494 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:21:02.562 +02:00 [Information] Request finished in 223.6486ms 200 image/x-icon
+2020-04-19 10:21:02.703 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:22:39.858 +02:00 [Information] Request finished in 101881.0284ms 101 
+2020-04-19 10:29:22.328 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:29:22.332 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:29:23.098 +02:00 [Information] Executed action "/Index" in 755.3643ms
+2020-04-19 10:29:23.101 +02:00 [Information] Request finished in 771.5929ms 200 text/html; charset=utf-8
+2020-04-19 10:29:23.166 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:29:23.188 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:29:23.201 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:29:23.215 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:29:23.225 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:29:23.231 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:29:23.243 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:29:23.257 +02:00 [Information] Request finished in 36.1069ms 200 application/javascript
+2020-04-19 10:29:23.260 +02:00 [Information] Request finished in 95.4826ms 200 text/css
+2020-04-19 10:29:23.264 +02:00 [Information] Request finished in 57.9991ms 200 text/css
+2020-04-19 10:29:23.268 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:29:23.272 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:29:23.275 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:29:23.279 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:29:23.285 +02:00 [Information] Request finished in 62.3824ms 200 application/javascript
+2020-04-19 10:29:23.296 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:29:23.300 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:29:23.303 +02:00 [Information] Request finished in 32.6592ms 200 application/javascript
+2020-04-19 10:29:23.307 +02:00 [Information] Request finished in 27.6022ms 200 application/javascript
+2020-04-19 10:29:23.308 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:29:23.311 +02:00 [Information] Request finished in 49.6413ms 200 application/javascript
+2020-04-19 10:29:23.363 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:29:23.372 +02:00 [Information] Policy execution successful.
+2020-04-19 10:29:26.487 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:29:27.643 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:29:27.648 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:29:27.653 +02:00 [Information] Request finished in 15.6735ms 200 image/x-icon
+2020-04-19 10:31:59.278 +02:00 [Information] Request finished in 155919.5284ms 101 
+2020-04-19 10:40:08.948 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 10:40:08.948 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:40:09.074 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 10:40:09.123 +02:00 [Information] Request finished in 175.2978ms 200 
+2020-04-19 10:40:09.609 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:40:09.829 +02:00 [Information] Executed action "/Index" in 207.9787ms
+2020-04-19 10:40:09.847 +02:00 [Information] Request finished in 904.9865ms 200 text/html; charset=utf-8
+2020-04-19 10:40:10.063 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:40:10.075 +02:00 [Information] The file "/js/chat.js" was not modified
+2020-04-19 10:40:10.081 +02:00 [Information] Request finished in 18.2102ms 304 application/javascript
+2020-04-19 10:40:10.109 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:40:10.114 +02:00 [Information] Policy execution successful.
+2020-04-19 10:41:25.123 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:41:27.081 +02:00 [Information] Request finished in 76958.3235ms 101 
+2020-04-19 10:41:44.569 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js.map  
+2020-04-19 10:41:44.576 +02:00 [Information] Request finished in 29.6765ms 404 
+2020-04-19 10:41:44.619 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css.map  
+2020-04-19 10:41:45.034 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css.map"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map"'
+2020-04-19 10:41:45.040 +02:00 [Information] Request finished in 420.8814ms 200 text/plain
+2020-04-19 10:41:48.875 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:41:48.878 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:41:48.886 +02:00 [Information] Executed action "/Index" in 2.8668ms
+2020-04-19 10:41:48.895 +02:00 [Information] Request finished in 14.0236ms 200 text/html; charset=utf-8
+2020-04-19 10:41:48.972 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:41:48.974 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:41:48.976 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:41:48.979 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:41:48.990 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:41:48.990 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:41:49.083 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:41:49.093 +02:00 [Information] Request finished in 118.8395ms 200 text/css
+2020-04-19 10:41:49.095 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:41:49.099 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:41:49.103 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:41:49.106 +02:00 [Information] Request finished in 144.2439ms 200 application/javascript
+2020-04-19 10:41:49.115 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:41:49.118 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:41:49.121 +02:00 [Information] Request finished in 20.4295ms 200 application/javascript
+2020-04-19 10:41:49.122 +02:00 [Information] Request finished in 155.2441ms 200 text/css
+2020-04-19 10:41:49.131 +02:00 [Information] Request finished in 139.2803ms 200 application/javascript
+2020-04-19 10:41:49.132 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:41:49.136 +02:00 [Information] Request finished in 150.5943ms 200 application/javascript
+2020-04-19 10:41:49.143 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:41:49.147 +02:00 [Information] Request finished in 169.4831ms 200 application/javascript
+2020-04-19 10:41:49.180 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:41:49.183 +02:00 [Information] Policy execution successful.
+2020-04-19 10:41:51.284 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:41:52.318 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:41:52.348 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:41:52.353 +02:00 [Information] Request finished in 54.9758ms 200 image/x-icon
+2020-04-19 10:43:31.246 +02:00 [Information] Request finished in 102011.4172ms 101 
+2020-04-19 10:43:55.683 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:43:55.689 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:43:55.692 +02:00 [Information] Executed action "/Index" in 1.0445ms
+2020-04-19 10:43:55.707 +02:00 [Information] Request finished in 14.4835ms 200 text/html; charset=utf-8
+2020-04-19 10:43:55.759 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:43:55.762 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:43:55.774 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:43:55.782 +02:00 [Information] Request finished in 16.7076ms 200 text/css
+2020-04-19 10:43:55.796 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:43:55.806 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:43:55.813 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:43:55.816 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:43:55.824 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:43:55.849 +02:00 [Information] Request finished in 33.7168ms 200 application/javascript
+2020-04-19 10:43:55.868 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:43:55.895 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:43:55.905 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:43:55.910 +02:00 [Information] Request finished in 84.5784ms 200 application/javascript
+2020-04-19 10:43:55.913 +02:00 [Information] Request finished in 124.5937ms 200 text/css
+2020-04-19 10:43:55.918 +02:00 [Information] Request finished in 111.8701ms 200 application/javascript
+2020-04-19 10:43:55.923 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:43:55.927 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:43:55.945 +02:00 [Information] Request finished in 116.4694ms 200 application/javascript
+2020-04-19 10:43:55.954 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:43:55.960 +02:00 [Information] Request finished in 149.9521ms 200 application/javascript
+2020-04-19 10:43:55.977 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:43:55.979 +02:00 [Information] Policy execution successful.
+2020-04-19 10:43:57.853 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:43:58.940 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:43:58.946 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:43:58.951 +02:00 [Information] Request finished in 15.1035ms 200 image/x-icon
+2020-04-19 10:47:15.172 +02:00 [Information] Request finished in 199195.392ms 101 
+2020-04-19 10:48:21.212 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:48:21.215 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:48:21.226 +02:00 [Information] Executed action "/Index" in 0.9246ms
+2020-04-19 10:48:21.233 +02:00 [Information] Request finished in 18.2188ms 200 text/html; charset=utf-8
+2020-04-19 10:48:21.303 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:48:21.317 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:48:21.328 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:48:21.341 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:48:21.378 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:48:21.389 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:48:21.422 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:48:21.440 +02:00 [Information] Request finished in 93.4007ms 200 text/css
+2020-04-19 10:48:21.455 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:48:21.471 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:48:21.474 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:48:21.481 +02:00 [Information] Request finished in 168.6396ms 200 text/css
+2020-04-19 10:48:21.487 +02:00 [Information] Request finished in 168.4982ms 200 application/javascript
+2020-04-19 10:48:21.489 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:48:21.492 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:48:21.498 +02:00 [Information] Request finished in 49.1289ms 200 application/javascript
+2020-04-19 10:48:21.511 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:48:21.517 +02:00 [Information] Request finished in 169.5843ms 200 application/javascript
+2020-04-19 10:48:21.522 +02:00 [Information] Request finished in 176.359ms 200 application/javascript
+2020-04-19 10:48:21.542 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:48:21.552 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:48:21.556 +02:00 [Information] Request finished in 205.6539ms 200 application/javascript
+2020-04-19 10:48:21.559 +02:00 [Information] Policy execution successful.
+2020-04-19 10:48:23.405 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:48:24.559 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:48:24.563 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:48:24.570 +02:00 [Information] Request finished in 8.2649ms 200 image/x-icon
+2020-04-19 10:52:03.234 +02:00 [Information] Request finished in 221629.6362ms 101 
+2020-04-19 10:52:10.381 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:52:10.386 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:52:10.392 +02:00 [Information] Executed action "/Index" in 0.9183ms
+2020-04-19 10:52:10.399 +02:00 [Information] Request finished in 22.4536ms 200 text/html; charset=utf-8
+2020-04-19 10:52:10.459 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:52:10.466 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:52:10.488 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:52:10.491 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:52:10.494 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:52:10.498 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:52:10.504 +02:00 [Information] Request finished in 37.8447ms 200 text/css
+2020-04-19 10:52:10.518 +02:00 [Information] Request finished in 42.0327ms 200 text/css
+2020-04-19 10:52:10.527 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:52:10.548 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:52:10.551 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:52:10.555 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:52:10.562 +02:00 [Information] Request finished in 80.7276ms 200 application/javascript
+2020-04-19 10:52:10.566 +02:00 [Information] Request finished in 62.0061ms 200 application/javascript
+2020-04-19 10:52:10.584 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:52:10.587 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:52:10.590 +02:00 [Information] Request finished in 80.185ms 200 application/javascript
+2020-04-19 10:52:10.598 +02:00 [Information] Request finished in 103.6365ms 200 application/javascript
+2020-04-19 10:52:10.602 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:52:10.618 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:52:10.627 +02:00 [Information] Request finished in 72.0931ms 200 application/javascript
+2020-04-19 10:52:10.668 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:52:10.673 +02:00 [Information] Policy execution successful.
+2020-04-19 10:52:13.766 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:52:14.891 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:52:14.899 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:52:14.901 +02:00 [Information] Request finished in 15.4892ms 200 image/x-icon
+2020-04-19 10:58:17.728 +02:00 [Information] Request finished in 367061.7947ms 101 
+2020-04-19 10:58:26.018 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 10:58:26.023 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 10:58:26.035 +02:00 [Information] Executed action "/Index" in 1.3512ms
+2020-04-19 10:58:26.039 +02:00 [Information] Request finished in 19.5685ms 200 text/html; charset=utf-8
+2020-04-19 10:58:26.133 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 10:58:26.143 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 10:58:26.152 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 10:58:26.158 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 10:58:26.222 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 10:58:26.225 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 10:58:26.238 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 10:58:26.244 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 10:58:26.258 +02:00 [Information] Request finished in 111.0112ms 200 text/css
+2020-04-19 10:58:26.269 +02:00 [Information] Request finished in 119.1692ms 200 application/javascript
+2020-04-19 10:58:26.284 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 10:58:26.295 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 10:58:26.300 +02:00 [Information] Request finished in 111.4407ms 200 application/javascript
+2020-04-19 10:58:26.307 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 10:58:26.310 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 10:58:26.318 +02:00 [Information] Request finished in 185.2607ms 200 text/css
+2020-04-19 10:58:26.322 +02:00 [Information] Request finished in 52.298ms 200 application/javascript
+2020-04-19 10:58:26.326 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 10:58:26.334 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 10:58:26.357 +02:00 [Information] Request finished in 193.5927ms 200 application/javascript
+2020-04-19 10:58:26.364 +02:00 [Information] Request finished in 177.7191ms 200 application/javascript
+2020-04-19 10:58:26.368 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 10:58:26.377 +02:00 [Information] Policy execution successful.
+2020-04-19 10:58:28.582 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 10:58:29.899 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 10:58:29.906 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 10:58:29.911 +02:00 [Information] Request finished in 14.2439ms 200 image/x-icon
+2020-04-19 11:27:13.443 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 11:27:13.443 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 11:27:13.580 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 11:27:13.600 +02:00 [Information] Request finished in 152.6305ms 200 
+2020-04-19 11:27:14.168 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 11:27:14.386 +02:00 [Information] Executed action "/Index" in 203.5451ms
+2020-04-19 11:27:14.505 +02:00 [Information] Request finished in 979.5243ms 200 text/html; charset=utf-8
+2020-04-19 11:27:14.516 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 11:27:14.845 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 11:27:14.913 +02:00 [Information] Request finished in 344.3425ms 200 application/javascript
+2020-04-19 11:27:14.937 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 11:27:14.944 +02:00 [Information] Policy execution successful.
+2020-04-19 11:27:58.528 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 11:28:08.803 +02:00 [Information] Request finished in 53868.4754ms 101 
+2020-04-19 11:28:44.731 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js.map  
+2020-04-19 11:28:44.739 +02:00 [Information] Request finished in 14.6976ms 404 
+2020-04-19 11:28:58.997 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 11:28:59.001 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 11:28:59.016 +02:00 [Information] Executed action "/Index" in 2.781ms
+2020-04-19 11:28:59.025 +02:00 [Information] Request finished in 35.9601ms 200 text/html; charset=utf-8
+2020-04-19 11:28:59.109 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 11:28:59.116 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 11:28:59.119 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 11:28:59.123 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 11:28:59.127 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 11:28:59.131 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 11:28:59.216 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 11:28:59.237 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 11:28:59.247 +02:00 [Information] Request finished in 88.9478ms 200 text/css
+2020-04-19 11:28:59.259 +02:00 [Information] Request finished in 116.7873ms 200 application/javascript
+2020-04-19 11:28:59.288 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 11:28:59.307 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 11:28:59.313 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 11:28:59.322 +02:00 [Information] Request finished in 60.0999ms 200 application/javascript
+2020-04-19 11:28:59.326 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 11:28:59.329 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 11:28:59.333 +02:00 [Information] Request finished in 223.5063ms 200 application/javascript
+2020-04-19 11:28:59.336 +02:00 [Information] Request finished in 222.1422ms 200 application/javascript
+2020-04-19 11:28:59.341 +02:00 [Information] Request finished in 189.0724ms 200 application/javascript
+2020-04-19 11:28:59.344 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 11:28:59.346 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 11:28:59.348 +02:00 [Information] Request finished in 241.0307ms 200 text/css
+2020-04-19 11:28:59.350 +02:00 [Information] Policy execution successful.
+2020-04-19 11:29:02.419 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 11:29:03.708 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 11:29:03.752 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 11:29:03.754 +02:00 [Information] Request finished in 53.4081ms 200 image/x-icon
+2020-04-19 11:29:40.400 +02:00 [Information] Request finished in 41052.7121ms 101 
+2020-04-19 11:46:38.336 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 11:46:38.492 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 11:46:39.000 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 11:46:39.333 +02:00 [Information] Executed action "/Index" in 326.6256ms
+2020-04-19 11:46:39.365 +02:00 [Information] Request finished in 1045.3113ms 200 text/html; charset=utf-8
+2020-04-19 11:46:39.489 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 11:46:39.960 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 11:46:39.960 +02:00 [Information] Request finished in 471.2248ms 200 application/javascript
+2020-04-19 11:47:05.184 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 11:47:05.185 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 11:47:05.188 +02:00 [Information] Executed action "/Index" in 2.4022ms
+2020-04-19 11:47:05.188 +02:00 [Information] Request finished in 4.1535ms 200 text/html; charset=utf-8
+2020-04-19 11:47:05.248 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 11:47:05.249 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 11:47:05.249 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 11:47:05.249 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 11:47:05.269 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 11:47:05.269 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 11:47:05.275 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 11:47:05.280 +02:00 [Information] Request finished in 32.3105ms 200 application/javascript
+2020-04-19 11:47:05.300 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 11:47:05.301 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 11:47:05.301 +02:00 [Information] Request finished in 1.4291ms 200 application/javascript
+2020-04-19 11:47:05.573 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 11:47:05.574 +02:00 [Information] Request finished in 325.1354ms 200 text/css
+2020-04-19 11:47:05.620 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 11:47:05.620 +02:00 [Information] Request finished in 370.9848ms 200 application/javascript
+2020-04-19 11:47:05.653 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 11:47:05.653 +02:00 [Information] Request finished in 404.6928ms 200 application/javascript
+2020-04-19 11:47:05.676 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 11:47:05.677 +02:00 [Information] Request finished in 407.256ms 200 text/css
+2020-04-19 11:47:05.686 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 11:47:05.687 +02:00 [Information] Request finished in 417.9902ms 200 application/javascript
+2020-04-19 11:47:05.865 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 11:47:05.870 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 11:47:05.870 +02:00 [Information] Request finished in 5.7351ms 200 image/x-icon
+2020-04-19 12:26:57.630 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 12:26:57.630 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 12:26:57.753 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 12:26:57.791 +02:00 [Information] Request finished in 137.381ms 200 
+2020-04-19 12:26:58.269 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 12:26:58.452 +02:00 [Information] Executed action "/Index" in 171.9047ms
+2020-04-19 12:26:58.465 +02:00 [Information] Request finished in 845.5722ms 200 text/html; charset=utf-8
+2020-04-19 12:26:58.610 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 12:26:58.680 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 12:26:58.682 +02:00 [Information] Request finished in 72.4578ms 200 application/javascript
+2020-04-19 12:26:58.715 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 12:26:58.719 +02:00 [Information] Policy execution successful.
+2020-04-19 12:27:06.116 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 12:27:31.465 +02:00 [Information] Request finished in 32748.1169ms 101 
+2020-04-19 12:44:45.403 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 12:44:45.404 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 12:44:45.590 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 12:44:45.637 +02:00 [Information] Request finished in 210.3463ms 200 
+2020-04-19 12:44:46.308 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 12:44:46.750 +02:00 [Information] Executed action "/Index" in 432.1711ms
+2020-04-19 12:44:46.783 +02:00 [Information] Request finished in 1385.5377ms 200 text/html; charset=utf-8
+2020-04-19 12:44:47.387 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 12:44:47.563 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 12:44:47.568 +02:00 [Information] Request finished in 180.4786ms 200 application/javascript
+2020-04-19 12:44:47.648 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 12:44:47.653 +02:00 [Information] Policy execution successful.
+2020-04-19 12:44:56.461 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 12:59:41.108 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 12:59:41.108 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-19 12:59:41.299 +02:00 [Information] Request finished in 212.6092ms 200 
+2020-04-19 12:59:41.300 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-19 12:59:42.027 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 12:59:42.465 +02:00 [Information] Executed action "/Index" in 291.4275ms
+2020-04-19 12:59:42.546 +02:00 [Information] Request finished in 1408.4612ms 200 text/html; charset=utf-8
+2020-04-19 12:59:42.550 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 12:59:42.788 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 12:59:42.902 +02:00 [Information] Request finished in 257.0653ms 200 application/javascript
+2020-04-19 12:59:43.001 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 12:59:43.155 +02:00 [Information] Policy execution successful.
+2020-04-19 12:59:43.942 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 13:11:52.406 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-19 13:11:52.749 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-19 13:11:52.774 +02:00 [Information] Executed action "/Index" in 14.9101ms
+2020-04-19 13:11:52.779 +02:00 [Information] Request finished in 382.5722ms 200 text/html; charset=utf-8
+2020-04-19 13:11:52.967 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-19 13:11:52.982 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-19 13:11:52.987 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-19 13:11:53.024 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-19 13:11:53.089 +02:00 [Information] Request finished in 118.2033ms 200 text/css
+2020-04-19 13:11:53.115 +02:00 [Information] Request finished in 730138.5911ms 101 
+2020-04-19 13:11:53.121 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-19 13:11:53.126 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-19 13:11:53.135 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-19 13:11:53.172 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-19 13:11:53.178 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-19 13:11:53.183 +02:00 [Information] Request finished in 249.1885ms 200 application/javascript
+2020-04-19 13:11:53.205 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-19 13:11:53.232 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-19 13:11:53.239 +02:00 [Information] Request finished in 267.4467ms 200 text/css
+2020-04-19 13:11:53.270 +02:00 [Information] Request finished in 166.8656ms 200 application/javascript
+2020-04-19 13:11:53.331 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-19 13:11:53.381 +02:00 [Information] Request finished in 162.8414ms 200 application/javascript
+2020-04-19 13:11:53.392 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-19 13:11:53.401 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-19 13:11:53.406 +02:00 [Information] Request finished in 272.2304ms 200 application/javascript
+2020-04-19 13:11:53.410 +02:00 [Information] Request finished in 294.6178ms 200 application/javascript
+2020-04-19 13:11:53.417 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 13:11:53.430 +02:00 [Information] Policy execution successful.
+2020-04-19 13:11:56.431 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 13:11:58.215 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/favicon.ico  
+2020-04-19 13:11:58.295 +02:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\favicon.ico"'
+2020-04-19 13:11:58.303 +02:00 [Information] Request finished in 95.416ms 200 image/x-icon
+2020-04-19 13:31:06.395 +02:00 [Information] Request finished in 1153043.0882ms 101 
+2020-04-19 13:31:42.288 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/tripNotification  
+2020-04-19 13:31:42.300 +02:00 [Information] Policy execution successful.
+2020-04-19 13:31:45.212 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-19 14:16:22.589 +02:00 [Information] Request finished in 2680263.61ms 101 

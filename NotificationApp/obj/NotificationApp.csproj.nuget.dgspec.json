@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Asmaa\\Venusera\\Aenny\\Notification\\Solution\\200322\\NotificationApp\\NotificationApp.csproj": {}
+    "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj": {}
   },
   "projects": {
-    "D:\\Asmaa\\Venusera\\Aenny\\Notification\\Solution\\200322\\NotificationApp\\NotificationApp.csproj": {
+    "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Asmaa\\Venusera\\Aenny\\Notification\\Solution\\200322\\NotificationApp\\NotificationApp.csproj",
+        "projectUniqueName": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj",
         "projectName": "NotificationApp",
-        "projectPath": "D:\\Asmaa\\Venusera\\Aenny\\Notification\\Solution\\200322\\NotificationApp\\NotificationApp.csproj",
-        "packagesPath": "C:\\Users\\Asmaa Bakheet\\.nuget\\packages\\",
-        "outputPath": "D:\\Asmaa\\Venusera\\Aenny\\Notification\\Solution\\200322\\NotificationApp\\obj\\",
+        "projectPath": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj",
+        "packagesPath": "C:\\Users\\ZeyadaNet\\.nuget\\packages\\",
+        "outputPath": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Asmaa Bakheet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZeyadaNet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,6 +61,22 @@
               "target": "Package",
               "version": "[106.10.1, )"
             },
+            "RestSharp.Serializers.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Sinks.RollingFile": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "System.Device.Location.Portable": {
               "target": "Package",
               "version": "[1.0.0, )"
@@ -73,7 +92,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

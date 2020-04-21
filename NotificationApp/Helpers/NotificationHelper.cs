@@ -2,6 +2,7 @@
 using Microsoft.AspNet.SignalR.Hubs;
 using Microsoft.AspNetCore.SignalR;
 using NotificationApp.API;
+using NotificationApp.DTO.Notification;
 using NotificationApp.Hubs;
 using NotificationApp.Hubs.NotificationService;
 using NotificationApp.Models;
@@ -33,7 +34,7 @@ namespace NotificationApp.Helpers
 
         {
 
-            var notis = (List<NotificationModel>)_NotificationAPIConsume.GetAllUnreadNotification();
+            var notis = (List<NotificationDto>)_NotificationAPIConsume.GetAllUnreadNotification();
 
             string li = "";
             if (notis != null)
@@ -67,14 +68,23 @@ namespace NotificationApp.Helpers
 
         {
 
-            var notis = (List<NotificationModel>)_NotificationAPIConsume.GetAllUnreadNotification();
+            var notis = (List<NotificationDto>)_NotificationAPIConsume.GetAllUnreadNotification();
             if (notis == null)
                 return 0;
             else
                 return notis.Count();
         }
 
-      
+        public int GetSpecificUserNotificationsCount(int UserId)
+
+        {
+
+            var notis = (List<NotificationDto>)_NotificationAPIConsume.GetAllUnreadSpecificAdminNotification(UserId);
+            if (notis == null)
+                return 0;
+            else
+                return notis.Count();
+        }
 
 
     }

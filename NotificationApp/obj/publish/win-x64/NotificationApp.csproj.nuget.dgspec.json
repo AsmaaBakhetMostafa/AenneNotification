@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VenuseraWork\\ProjectAenne\\NotificationApp\\NotificationApp\\NotificationApp\\NotificationApp.csproj": {}
+    "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj": {}
   },
   "projects": {
-    "D:\\VenuseraWork\\ProjectAenne\\NotificationApp\\NotificationApp\\NotificationApp\\NotificationApp.csproj": {
+    "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VenuseraWork\\ProjectAenne\\NotificationApp\\NotificationApp\\NotificationApp\\NotificationApp.csproj",
+        "projectUniqueName": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj",
         "projectName": "NotificationApp",
-        "projectPath": "D:\\VenuseraWork\\ProjectAenne\\NotificationApp\\NotificationApp\\NotificationApp\\NotificationApp.csproj",
+        "projectPath": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\NotificationApp.csproj",
         "packagesPath": "C:\\Users\\ZeyadaNet\\.nuget\\packages\\",
-        "outputPath": "D:\\VenuseraWork\\ProjectAenne\\NotificationApp\\NotificationApp\\NotificationApp\\obj\\publish\\win-x64\\",
+        "outputPath": "D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,6 +60,22 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.10.1, )"
+            },
+            "RestSharp.Serializers.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Sinks.RollingFile": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "System.Device.Location.Portable": {
               "target": "Package",

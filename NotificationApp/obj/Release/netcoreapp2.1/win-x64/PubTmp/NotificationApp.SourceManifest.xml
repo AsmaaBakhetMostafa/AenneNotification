@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="D:\VenuseraWork\ProjectAenne\NotificationApp\NotificationApp\NotificationApp\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\" />
+  <IisApp path="D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Release\netcoreapp2.1\win-x64\PubTmp\Out\" />
 </sitemanifest>

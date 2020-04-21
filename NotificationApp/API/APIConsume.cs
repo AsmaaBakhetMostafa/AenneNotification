@@ -4,6 +4,7 @@ using NotificationApp.DTO.Driver;
 using NotificationApp.DTO.Financial;
 using NotificationApp.Models;
 using RestSharp;
+using RestSharp.Serializers.NewtonsoftJson;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,8 @@ namespace NotificationApp.API
 {
     public class APIConsume
     {
-        private RestClient client = new RestClient("http://aenee.app.192-185-7-211.hgws27.hgwin.temp.domains/Api/");//("http://localhost:49950/Api/");
+
+        private RestClient client = new RestClient("http://aenee.app.192-185-7-211.hgws27.hgwin.temp.domains/Api/");//("http://aenee.app.192-185-7-211.hgws27.hgwin.temp.domains/Api/");
 
         //to get matched driver 
         public IList<MatchedDriverVehicalDto> GetMatchedDriver(int Healty_number, int Handicapped_Number)
@@ -27,8 +29,8 @@ namespace NotificationApp.API
 
             var response = client.Execute<IList<MatchedDriverVehicalDto>>(request);
 
-            if (response.Data == null)
-                throw new Exception(response.ErrorMessage);
+            //if (response.Data == null)
+            //    throw new Exception(response.ErrorMessage);
 
             return response.Data;
         }
@@ -41,23 +43,69 @@ namespace NotificationApp.API
             request.AddParameter("WeekDay", WeekDay, ParameterType.UrlSegment);
             var response = client.Execute<FinancialsRushHoursDto>(request);
 
-            if (response.Data == null)
-                throw new Exception(response.ErrorMessage);
+            //if (response.Data == null)
+            //    throw new Exception(response.ErrorMessage);
 
             return response.Data;
         }
         // to CalculatePriceCost
         public decimal CalculatePriceCost(PriceCostDto pricecost)
         {
-            var request = new RestRequest("Venusera/Financial/CalculateCostPrice/{pricecost}", Method.GET) { RequestFormat = DataFormat.Json };
+            var request = new RestRequest("Venusera/Financial/CalculateCostPrice") { RequestFormat = DataFormat.Json };
 
-            request.AddParameter("pricecost", pricecost, ParameterType.UrlSegment);
+
+            client.UseNewtonsoftJson();
+            request.Method = Method.POST;
+            request.AddJsonBody(pricecost);
+            //request.AddParameter("pricecost", pricecost, ParameterType.QueryString);
             var response = client.Execute<decimal>(request);
 
-            if (response.Data == 0)
-                throw new Exception(response.ErrorMessage);
+            //if (response.Data == 0)
+            //    throw new Exception(response.ErrorMessage);
 
             return response.Data;
+        }
+        // to CalculatePriceCost
+        public decimal CalculateDoorOpenCost(TimeSpan StartTime, TimeSpan CancelTime)
+        {
+            var request = new RestRequest("Financial/CalculateDoorOpenCost", Method.GET) { RequestFormat = DataFormat.Json };
+
+            request.AddParameter("StartTime", StartTime, ParameterType.QueryString);
+            request.AddParameter("CancelTime", CancelTime, ParameterType.QueryString);
+
+            var response = client.Execute<decimal>(request);
+
+            //if (response.Data == 0)
+            //    throw new Exception(response.ErrorMessage);
+
+            return response.Data;
+        }
+
+        //to get GetDriverVehicleByDriverId
+        public Driver_Vehicle GetDriverVehicleByDriverId(int Driver_Id)
+        {
+            var request = new RestRequest("Drivers/GetDriverVehicleByDriverId/{Driver_Id}", Method.GET) { RequestFormat = DataFormat.Json };
+
+            request.AddParameter("Driver_Id", Driver_Id, ParameterType.UrlSegment);
+            var response = client.Execute<Driver_Vehicle>(request);
+
+            //if (response.Data == null)
+            //    throw new Exception(response.ErrorMessage);
+
+            return response.Data;
+        }
+        public void CreateTripChat(Trip_Chat trip_Chat)
+        {
+            var request = new RestRequest("Trip_Chat/PostTrip_Chat") { RequestFormat = DataFormat.Json };
+            //request.AddBody(NotificationData);
+
+
+            client.UseNewtonsoftJson();
+            request.Method = Method.POST;
+            request.AddJsonBody(trip_Chat);
+
+            var response = client.Execute(request);
+            var content = response.Content; // raw content as string  
         }
     }
 }

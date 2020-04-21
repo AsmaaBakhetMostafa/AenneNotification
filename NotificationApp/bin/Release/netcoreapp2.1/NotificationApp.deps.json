@@ -28,6 +28,10 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "RestSharp": "106.10.1",
+          "RestSharp.Serializers.NewtonsoftJson": "106.10.1",
+          "Serilog.AspNetCore": "2.1.1",
+          "Serilog.Settings.Configuration": "3.0.1",
+          "Serilog.Sinks.RollingFile": "3.3.0",
           "System.Device.Location.Portable": "1.0.0"
         },
         "runtime": {
@@ -48,6 +52,17 @@
           "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "RestSharp/106.10.1": {
         "runtime": {
           "lib/netstandard2.0/RestSharp.dll": {
@@ -57,6 +72,133 @@
         },
         "compile": {
           "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
+      "RestSharp.Serializers.NewtonsoftJson/106.10.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "RestSharp": "106.10.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.dll": {
+            "assemblyVersion": "106.0.0.0",
+            "fileVersion": "106.10.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.dll": {}
+        }
+      },
+      "Serilog/2.6.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.dll": {}
+        }
+      },
+      "Serilog.AspNetCore/2.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Serilog": "2.6.0",
+          "Serilog.Extensions.Logging": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.AspNetCore.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.AspNetCore.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging/2.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Serilog": "2.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        }
+      },
+      "Serilog.Settings.Configuration/3.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.1.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
+          "Serilog": "2.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/3.2.0": {
+        "dependencies": {
+          "Serilog": "2.6.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.RollingFile/3.3.0": {
+        "dependencies": {
+          "Serilog.Sinks.File": "3.2.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {}
         }
       },
       "System.Device.Location.Portable/1.0.0": {
@@ -70,9 +212,16 @@
           "lib/System.Device.Portable.dll": {}
         }
       },
+      "System.Threading.Timer/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "compile": {
@@ -352,7 +501,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -618,7 +767,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.0.1",
           "Microsoft.AspNetCore.Routing": "2.1.1",
           "Microsoft.AspNetCore.WebSockets": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Http.Connections.dll": {}
@@ -628,7 +777,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -721,7 +870,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -952,7 +1101,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -1187,7 +1336,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1213,7 +1362,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.0.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -1537,7 +1686,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -1592,7 +1741,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -1782,7 +1931,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -1878,7 +2027,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.2.0"
         },
@@ -1904,7 +2053,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -2145,16 +2294,10 @@
         },
         "compileOnly": true
       },
-      "Newtonsoft.Json/11.0.2": {
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "compileOnly": true
-      },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
@@ -2462,7 +2605,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -3209,6 +3352,13 @@
       "path": "microsoft.aspnet.signalr.core/2.4.1",
       "hashPath": "microsoft.aspnet.signalr.core.2.4.1.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "RestSharp/106.10.1": {
       "type": "package",
       "serviceable": true,
@@ -3216,12 +3366,68 @@
       "path": "restsharp/106.10.1",
       "hashPath": "restsharp.106.10.1.nupkg.sha512"
     },
+    "RestSharp.Serializers.NewtonsoftJson/106.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-05TKwKCqyT2PZ1oC5ppBivOcyT4KBzSz+2UwutJzmknHQ0D132O5uNlRf6JyQOI76p1shX/b9ACBS+V282xB9A==",
+      "path": "restsharp.serializers.newtonsoftjson/106.10.1",
+      "hashPath": "restsharp.serializers.newtonsoftjson.106.10.1.nupkg.sha512"
+    },
+    "Serilog/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hxHgHkza8ZowrvQ+jTEF2ypDWGP8NbNtxPQIx7ogTAM9fisDFo2+6kOaxCkleZLO8hiyq0kW5tDLkgm/dbj9uA==",
+      "path": "serilog/2.6.0",
+      "hashPath": "serilog.2.6.0.nupkg.sha512"
+    },
+    "Serilog.AspNetCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-euuzaDEF8RuTszbqZnYYOm15bGKm0ID3Vaj++sDhmxeL79a8yRemhv2Y8knjvqoOatIpN7Cqd6Jma0A+Pk+V7g==",
+      "path": "serilog.aspnetcore/2.1.1",
+      "hashPath": "serilog.aspnetcore.2.1.1.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JAh1vHmbiwDAjA9VmUQjAXvlGm+vDv8usarajlkx7Arm6Zai+CPY4naE4N9M3Eh520wY5GmIWpM+7zmfMbdTOw==",
+      "path": "serilog.extensions.logging/2.0.0",
+      "hashPath": "serilog.extensions.logging.2.0.0.nupkg.sha512"
+    },
+    "Serilog.Settings.Configuration/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c9W5OWJgyDWIfewzzSOBUve7XKRyXTt+A8McIBKY/lydI478JnxZUTbbigAtzEIq+FecZGQ5QgA8oUBFi40odA==",
+      "path": "serilog.settings.configuration/3.0.1",
+      "hashPath": "serilog.settings.configuration.3.0.1.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VHbo68pMg5hwSWrzLEdZv5b/rYmIgHIRhd4d5rl8GnC5/a8Fr+RShT5kWyeJOXax1el6mNJ+dmHDOVgnNUQxaw==",
+      "path": "serilog.sinks.file/3.2.0",
+      "hashPath": "serilog.sinks.file.3.2.0.nupkg.sha512"
+    },
+    "Serilog.Sinks.RollingFile/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2lT5X1r3GH4P0bRWJfhA7etGl8Q2Ipw9AACvtAHWRUSpYZ42NGVyHoVs2ALBZ/cAkkS+tA4jl80Zie144eLQPg==",
+      "path": "serilog.sinks.rollingfile/3.3.0",
+      "hashPath": "serilog.sinks.rollingfile.3.3.0.nupkg.sha512"
+    },
     "System.Device.Location.Portable/1.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-VttxozXEleYcK2NiMo7xKMhDCCJbKtjnxcWDmqu703DeceLTI/9jopfEblyZKL0DWHGyOYLEan06yk6Hcv2cXw==",
       "path": "system.device.location.portable/1.0.0",
       "hashPath": "system.device.location.portable.1.0.0.nupkg.sha512"
+    },
+    "System.Threading.Timer/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
+      "path": "system.threading.timer/4.0.1",
+      "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -4384,13 +4590,6 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
-    },
-    "Newtonsoft.Json/11.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",

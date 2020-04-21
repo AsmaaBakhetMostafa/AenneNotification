@@ -9,7 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using NotificationApp.Hubs;
+using Serilog;
 
 namespace NotificationApp
 {
@@ -17,6 +19,8 @@ namespace NotificationApp
     {
         public Startup(IConfiguration configuration)
         {
+            // Init Serilog configuration
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
             Configuration = configuration;
         }
 
@@ -60,8 +64,11 @@ namespace NotificationApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            // logging
+            loggerFactory.AddSerilog();
+   
             //app.UseCors(builder => builder.AllowCredentials().AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().Build());
             app.UseCors("CorsPolicy");
 

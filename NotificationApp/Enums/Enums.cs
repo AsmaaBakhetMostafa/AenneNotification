@@ -62,6 +62,8 @@ namespace NotificationApp.Enums
         Complaint = 1,
         Emergency = 2,
         ScheduledTrip = 3,
-        RequestCar = 4
+        RequestCar = 4,
+        AssignDriverToTrip = 5,
+        AssignDriverToVehical = 6
     }
 }

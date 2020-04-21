@@ -12,6 +12,7 @@ namespace NotificationApp.DTO.Financial
         public decimal NormalKM { get; set; }
         public decimal RusKM { get; set; }
         public decimal TotalWaitingMinutes { get; set; }
+        public string TotalMinutes { get; set; }
 
         public bool IsAdditionalFees { get; set; }
         public TimeSpan PickUpTime { get; set; }

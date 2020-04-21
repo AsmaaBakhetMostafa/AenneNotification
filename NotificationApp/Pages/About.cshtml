@@ -1,9 +1,42 @@
 ﻿@page
-@model AboutModel
-@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="col-md-3">User</div>
+                <div class="col-md-9"><input type="text" id="userName" /></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <div class="col-md-3">Message</div>
+                <div class="col-md-9">
+                    <input type="text" id="userMessage" /> &nbsp;&nbsp;&nbsp;
+                    <input type="button" id="sendMessage" value="Send Message" />
+                    <input type="button" id="AcceptTrip" value="Accept Trip" />
+                    <input type="button" id="CancelTrip" value="Cancel Trip" />
+                    <input type="button" id="EndTrip" value="End Trip" />
+                    <input type="button" id="ClientCancelTrip" value="Client Cancel Trip" />
+                    <input type="button" id="ClientArrived" value="Driver Arrived" />
 
-<p>Use this area to provide additional information.</p>
+                    <input type="button" id="ClientComplaint" value="Make Complaint" />
+                    <input type="button" id="DriverEmergency" value="Make Emergency" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/signalr.js"></script>
+<script src="~/js/chat1.js"></script>

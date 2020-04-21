@@ -1,0 +1,58 @@
+2020-04-21 13:38:52.830 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-04-21 13:38:52.830 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-04-21 13:38:53.008 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-04-21 13:38:53.165 +02:00 [Information] Request finished in 301.6704ms 200 
+2020-04-21 13:38:54.035 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-04-21 13:38:54.515 +02:00 [Information] Executed action "/Index" in 436.1032ms
+2020-04-21 13:38:54.609 +02:00 [Information] Request finished in 1716.1794ms 200 text/html; charset=utf-8
+2020-04-21 13:38:54.627 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-04-21 13:38:54.776 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-04-21 13:38:54.792 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-04-21 13:38:54.803 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-04-21 13:38:54.805 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-04-21 13:38:54.885 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-04-21 13:38:55.232 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-04-21 13:38:55.269 +02:00 [Information] Request finished in 554.6741ms 200 text/css
+2020-04-21 13:38:55.286 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-04-21 13:38:55.358 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-04-21 13:38:55.382 +02:00 [Information] Request finished in 678.8586ms 200 application/javascript
+2020-04-21 13:38:55.395 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-04-21 13:38:55.453 +02:00 [Information] Request finished in 749.4857ms 200 application/javascript
+2020-04-21 13:38:55.493 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-04-21 13:38:55.523 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-04-21 13:38:55.532 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-04-21 13:38:55.544 +02:00 [Information] Request finished in 903.8909ms 200 application/javascript
+2020-04-21 13:38:55.554 +02:00 [Information] Request finished in 865.0586ms 200 application/javascript
+2020-04-21 13:38:55.563 +02:00 [Information] Request finished in 676.9173ms 200 text/css
+2020-04-21 13:38:55.567 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-04-21 13:38:55.573 +02:00 [Information] Request finished in 280.9066ms 200 application/javascript
+2020-04-21 13:38:55.900 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:38:55.925 +02:00 [Information] Policy execution successful.
+2020-04-21 13:39:08.655 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:39:15.515 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:39:15.519 +02:00 [Information] Policy execution successful.
+2020-04-21 13:39:15.568 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:39:20.079 +02:00 [Information] Request finished in 4563.7345ms 101 
+2020-04-21 13:39:21.010 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:39:21.018 +02:00 [Information] Policy execution successful.
+2020-04-21 13:39:21.078 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:44:24.504 +02:00 [Information] Request finished in 303493.1577ms 101 
+2020-04-21 13:44:26.112 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:44:26.120 +02:00 [Information] Policy execution successful.
+2020-04-21 13:44:26.326 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:45:04.948 +02:00 [Information] Request finished in 38090.2032ms 101 
+2020-04-21 13:45:08.060 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:45:08.294 +02:00 [Information] Policy execution successful.
+2020-04-21 13:45:08.975 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:45:43.849 +02:00 [Information] Request finished in 35889.9536ms 101 
+2020-04-21 13:45:45.764 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:45:45.769 +02:00 [Information] Policy execution successful.
+2020-04-21 13:45:45.951 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:46:29.751 +02:00 [Information] Request finished in 43988.5738ms 101 
+2020-04-21 13:46:30.299 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:46:30.304 +02:00 [Information] Policy execution successful.
+2020-04-21 13:46:30.389 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-04-21 13:47:10.206 +02:00 [Information] Request finished in 39907.2345ms 101 
+2020-04-21 13:47:10.548 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-04-21 13:47:10.551 +02:00 [Information] Policy execution successful.
+2020-04-21 13:47:10.604 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.

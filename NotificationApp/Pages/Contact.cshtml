@@ -1,19 +1,102 @@
 ﻿@page
-@model ContactModel
-@{
-    ViewData["Title"] = "Contact";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<html>
+<head>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+    @*<script src="http://maps.google.com/maps/api/js?sensor=false"></script>*@
+    <script src="https://maps.googleapis.com/maps/api/js?"></script>
+    <script src="~/lib/signalr/signalr.js"></script>
+</head>
+<body>
+    <input type="text" id="txtLat" />
+    <input type="text" id="txtLong" />
+    <input type="button" value="Click to Display Map" onclick="DisplayGoogleMap()" />
+    <input type="button" id="SendTripIdToDriver" value="Send Driver location" onclick="DisplayDriverLocation()">
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <div id="myDiv" style="width:100%;height:400px;"></div>
+
+    <script type="text/javascript">
+
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl("http://localhost:6715/tripNotification",
+                { skipNegotiation: true, transport: signalR.HttpTransportType.WebSockets })
+            .build();
+        setTimeout(() => {
+            alert("Hello");
+        }, 3000);
+        connection.start()
+            .then(res => {
+                alert("stared");
+                connection.invoke('GetClientId',135, 27.0338426000, 31.2796255000);
+                connection.on('NotifiedGetClientId', (Client_Id, Driver_Pickup_Latt, Driver_Pickup_Long) => {
+                    DisplayGoogleMap(Driver_Pickup_Latt, Driver_Pickup_Long);
+                    connection.invoke('OnConnectedAsync', Client_Id, 4).then(res => {
+                        alert("dodo");
+                        connection.on("NotifiedCurrenDriverLocationForClient", (Driver_Id, Driver_Pickup_Long, Driver_Pickup_Latt) => {
+                            DisplayGoogleMap(Driver_Pickup_Latt, Driver_Pickup_Long);
+                        });
+                    });
+                })
+            })
+            .catch(err => {
+                console.error(err);
+            });
+
+        connection.on("NotifiedClientLocationUrl", (LocationUrl) => { //Driver 
+
+            alert("push to client LocationUrl:" + LocationUrl);
+        });
+        function DisplayDriverLocation() {
+            connection.invoke("GetCurrentLongAndLattForSpecificDriver", 135, 30, 31.2796255000, 27.0338426000).then
+                (res => {
+                    alert("driver location");
+                })
+        }
+  
+        function DisplayGoogleMap(Lat, Long) {
+
+            directionsDisplay = new google.maps.DirectionsRenderer({
+                suppressMarkers: true
+            });
+
+            var mapOptions = {
+                zoom: 15,
+                minZoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            }
+
+            map = new google.maps.Map(document.getElementById("myDiv"), mapOptions);
+
+            directionsDisplay.setMap(map);
+            calcRoute();
+
+
+
+
+            //  var Lat = document.getElementById("txtLat").value;
+            //  var Long = document.getElementById("txtLong").value;
+            //27.0338426000, 31.2796255000
+            //Set the Latitude and Longitude of the Map
+            var myAddress = new google.maps.LatLng(Lat, Long);
+
+            //Create Options or set different Characteristics of Google Map
+            var mapOptions = {
+                center: myAddress,
+                zoom: 15,
+                minZoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            //Display the Google map in the div control with the defined Options
+            var map = new google.maps.Map(document.getElementById("myDiv"), mapOptions);
+
+            //Set Marker on the Map
+            var marker = new google.maps.Marker({
+                position: myAddress,
+                animation: google.maps.Animation.BOUNCE,
+            });
+
+            marker.setMap(map);
+        }
+    </script>
+</body>
+</html>  

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\VenuseraWork\ProjectAenne\PublishNotification</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/8YGjfexQk649hIQLIKdSQAAAAACAAAAAAAQZgAAAAEAACAAAAALFTwh0pXC/4Lr/qydGuJo3A4kVnj5ADU2duDOQkyb+AAAAAAOgAAAAAIAACAAAAD7SbiaeN08jEPP5GcP2vwrKHldM0OOhpEMm+VMtfhGLiAAAAAqnYTRuLCrhHjqJ3p0LON8DGQy6KcN/E3Gh4dHZvkVgkAAAADwRml9g/o9hlCX9y2t078qLetzciDUbSxdbb1ZH1MUbLsS47EYXPHSUXX/I8Uvm868GDnSPd7qAbJdLk3lRu9I</EncryptedPassword>
+  </PropertyGroup>
+</Project>
