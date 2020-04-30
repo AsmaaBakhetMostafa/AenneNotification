@@ -23,7 +23,7 @@ namespace NotificationApp.Hubs
         private static readonly ConcurrentDictionary<string, UserHubModels> Users =
                            new ConcurrentDictionary<string, UserHubModels>(StringComparer.InvariantCultureIgnoreCase);
 
-        string AdminBaseUrl = "http://doaaberam-001-site1.itempurl.com/";
+        string AdminBaseUrl = "http://venusera-001-site6.atempurl.com/";
         /// <summary>
         /// /Test
         /// </summary>
@@ -286,12 +286,21 @@ namespace NotificationApp.Hubs
         }
 
 
-        public void ReminderNotification(string DriverID, string notificationID, string tripeId, DateTime tripdate, DateTime triptime)//(string userId)
+        public void ReminderNotification(string DriverID, string TripScheduleId)//(string userId)
         {
+            
             //push Notification 
-            Clients.User(DriverID).SendAsync("NotifiedScheduledTrip",DriverID, notificationID, tripeId, tripdate, triptime);
+            var LstConnIDs = Users.Where(x => x.Key == DriverID.ToString() && x.Value.UserType == (int)DestinationUserType.Driver)
+                             .Select(x => x.Value).FirstOrDefault();
+            if (LstConnIDs != null)
+            {
+                foreach (var ConnID in LstConnIDs.ConnectionIds)
+                {
+                  
+                   Clients.Client(ConnID).SendAsync("NotifiedAssignDriverToScheduledTrip", DriverID, TripScheduleId);
+                }
+            }
         }
-
 
         public async Task OnConnectedAsync(string UserID, int UserType)
         {

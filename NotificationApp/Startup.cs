@@ -29,7 +29,7 @@ namespace NotificationApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          services.AddCors();
+            services.AddCors();
             //services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
             //{
             //    builder
@@ -39,16 +39,16 @@ namespace NotificationApp
             //        .DisallowCredentials();
             //}));
             services.AddCors(options => options.AddPolicy("CorsPolicy",
- builder =>
- {
-     builder.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin()
-            //.WithOrigins("*")
-            //.WithMethods("*")
-            //.WithHeaders("*")
+             builder =>
+             {
+                 builder.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin()
+                        //.WithOrigins("*")
+                        //.WithMethods("*")
+                        //.WithHeaders("*")
 
 
-            .AllowCredentials();
- }));
+                        .AllowCredentials();
+             }));
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -68,17 +68,17 @@ namespace NotificationApp
         {
             // logging
             loggerFactory.AddSerilog();
-   
+
             //app.UseCors(builder => builder.AllowCredentials().AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().Build());
             app.UseCors("CorsPolicy");
 
-         //app.UseCors(builder => builder
-         //     .AllowAnyOrigin()
-         //     .AllowAnyMethod()
-         //     .AllowAnyHeader()
-         //     .AllowCredentials()
+            //app.UseCors(builder => builder
+            //     .AllowAnyOrigin()
+            //     .AllowAnyMethod()
+            //     .AllowAnyHeader()
+            //     .AllowCredentials()
 
-         //     );
+            //     );
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

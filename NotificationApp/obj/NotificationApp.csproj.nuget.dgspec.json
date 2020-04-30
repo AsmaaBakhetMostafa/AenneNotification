@@ -57,6 +57,10 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "Quartz": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[106.10.1, )"

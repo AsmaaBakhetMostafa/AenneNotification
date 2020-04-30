@@ -296,7 +296,7 @@ namespace NotificationApp.Hubs
                 }
             }
         }
-        public async Task GetCurrentLongAndLattForSpecificDriver(int Client_Id, int Driver_Id, double Driver_Pickup_Long, double Driver_Pickup_Latt)
+        public async Task GetCurrentLongAndLattForSpecificDriver(int Client_Id, int Driver_Id, double Driver_Pickup_Long, double Driver_Pickup_Latt,string TotalMinutes,string TotalDistance,string Path)
         {
 
             if (Driver_Id != 0)
@@ -310,7 +310,7 @@ namespace NotificationApp.Hubs
                     foreach (var ConnID in LstConnIDs.ConnectionIds)
                     {
                         // await Clients.User(Client_Id.ToString()).SendAsync("NotifiedCurrenDriverLocationForClient",Driver_Id, Driver_Pickup_Long, Driver_Pickup_Latt);
-                        await Clients.Client(ConnID).SendAsync("NotifiedCurrenDriverLocationForClient", Driver_Id, Driver_Pickup_Long, Driver_Pickup_Latt);
+                        await Clients.Client(ConnID).SendAsync("NotifiedCurrenDriverLocationForClient", Driver_Id, Driver_Pickup_Long, Driver_Pickup_Latt, TotalMinutes, TotalDistance,Path);
                     }
                 }
             }
@@ -435,7 +435,7 @@ namespace NotificationApp.Hubs
 
         //To get TripId after insert in database from client
         // to Tell Driver that  client cancel trip 
-        public async Task NotifiClientSaveTrip(int Driver_Id,int Trip_Id, string Trip_Pickup, string Trip_Destination)
+        public async Task NotifiClientSaveTrip(int Driver_Id,int Trip_Id, string Trip_Pickup, string Trip_Destination,int Vehicle_Id)
         {
             //push Trip_Id  to specific driver 
             var LstConnIDs = Users.Where(x => x.Key == Driver_Id.ToString() && x.Value.UserType == (int)DestinationUserType.Driver)
@@ -444,7 +444,7 @@ namespace NotificationApp.Hubs
             {
                 foreach (var ConnID in LstConnIDs.ConnectionIds)
                 {
-                    await Clients.Client(ConnID).SendAsync("NotifiedDriverTripId", Trip_Id, Trip_Pickup, Trip_Destination);
+                    await Clients.Client(ConnID).SendAsync("NotifiedDriverTripId", Trip_Id, Trip_Pickup, Trip_Destination, Vehicle_Id);
                 }
             }
         }
