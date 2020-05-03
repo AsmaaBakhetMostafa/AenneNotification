@@ -1,0 +1,43 @@
+2020-05-03 11:28:23.973 +02:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6715/  0
+2020-05-03 11:28:23.973 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/  
+2020-05-03 11:28:24.155 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-05-03 11:28:24.224 +02:00 [Information] Request finished in 230.4968ms 200 
+2020-05-03 11:28:25.703 +02:00 [Information] Route matched with "{page = \"/Index\"}". Executing action "/Index"
+2020-05-03 11:28:26.120 +02:00 [Information] Executed action "/Index" in 278.0928ms
+2020-05-03 11:28:26.259 +02:00 [Information] Request finished in 2172.3889ms 200 text/html; charset=utf-8
+2020-05-03 11:28:26.691 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/css/site.css  
+2020-05-03 11:28:26.735 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/css/bootstrap.css  
+2020-05-03 11:28:26.742 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/signalr/signalr.js  
+2020-05-03 11:28:26.943 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\css\site.css"'
+2020-05-03 11:28:27.004 +02:00 [Information] Request finished in 352.4094ms 200 text/css
+2020-05-03 11:28:27.031 +02:00 [Information] Sending file. Request path: '"/lib/signalr/signalr.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\signalr\signalr.js"'
+2020-05-03 11:28:27.057 +02:00 [Information] Request finished in 425.3625ms 200 application/javascript
+2020-05-03 11:28:27.072 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2020-05-03 11:28:27.079 +02:00 [Information] Request finished in 459.9935ms 200 text/css
+2020-05-03 11:28:27.125 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/chat.js  
+2020-05-03 11:28:27.201 +02:00 [Information] Sending file. Request path: '"/js/chat.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\chat.js"'
+2020-05-03 11:28:27.205 +02:00 [Information] Request finished in 79.2337ms 200 application/javascript
+2020-05-03 11:28:27.279 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/jquery/dist/jquery.js  
+2020-05-03 11:28:27.334 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/lib/bootstrap/dist/js/bootstrap.js  
+2020-05-03 11:28:27.438 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"'
+2020-05-03 11:28:27.446 +02:00 [Information] Request finished in 113.1218ms 200 application/javascript
+2020-05-03 11:28:27.458 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\lib\jquery\dist\jquery.js"'
+2020-05-03 11:28:27.462 +02:00 [Information] Request finished in 183.5109ms 200 application/javascript
+2020-05-03 11:28:27.513 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/js/site.js?v=dLGP40S79Xnx6GqUthRF6NWvjvhQ1nOvdVSwaNcgG18  
+2020-05-03 11:28:27.519 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\wwwroot\js\site.js"'
+2020-05-03 11:28:27.525 +02:00 [Information] Request finished in 9.835ms 200 application/javascript
+2020-05-03 11:28:27.558 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-05-03 11:28:27.562 +02:00 [Information] Policy execution successful.
+2020-05-03 11:28:55.409 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-05-03 11:29:25.007 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-05-03 11:29:25.061 +02:00 [Information] Policy execution successful.
+2020-05-03 11:29:25.286 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-05-03 11:29:31.771 +02:00 [Information] Request finished in 6798.8925ms 101 
+2020-05-03 11:29:32.622 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-05-03 11:29:32.839 +02:00 [Information] Policy execution successful.
+2020-05-03 11:29:32.907 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-05-03 11:30:04.164 +02:00 [Information] Request finished in 31555.6617ms 101 
+2020-05-03 11:30:04.586 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6715/AdminNotification  
+2020-05-03 11:30:04.590 +02:00 [Information] Policy execution successful.
+2020-05-03 11:30:04.651 +02:00 [Information] Completed connection handshake. Using HubProtocol '"json"'.
+2020-05-03 11:32:14.411 +02:00 [Information] Request finished in 129817.1151ms 101 

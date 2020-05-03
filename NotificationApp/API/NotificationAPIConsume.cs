@@ -18,7 +18,7 @@ namespace NotificationApp.API
         {
             var request = new RestRequest("Venusera/Trips/GetAcceptedScheduledTrips", Method.GET) { RequestFormat = DataFormat.Json };
 
-            var response = client.Execute<IList<TripModel>>(request);
+            var response = client.Execute<IList<TripsDto>>(request);
 
             //if (response.Data == null)
             //    throw new Exception(response.ErrorMessage);

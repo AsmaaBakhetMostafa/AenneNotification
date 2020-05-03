@@ -51,7 +51,7 @@ using NotificationApp;
             WriteLiteral("<html>\r\n");
             EndContext();
             BeginContext(15, 222, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c753736e9b94fdcbc939e868fa81d05", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "807aaea51b74493d995f9a39ceeec3ec", async() => {
                 BeginContext(21, 4, true);
                 WriteLiteral("\r\n\r\n");
                 EndContext();
@@ -59,7 +59,7 @@ using NotificationApp;
                 WriteLiteral("    <script src=\"https://maps.googleapis.com/maps/api/js?\"></script>\r\n    ");
                 EndContext();
                 BeginContext(180, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48d0186001db4eb096378ce1127145a5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d293482b0154c7da9902e2962e84a9e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -92,7 +92,7 @@ using NotificationApp;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(239, 3566, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59b996e5137c4430a1a6d105f8f94eef", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41a4851df3d74cc69afb14fc256d3f18", async() => {
                 BeginContext(245, 3553, true);
                 WriteLiteral(@"
     <input type=""text"" id=""txtLat"" />

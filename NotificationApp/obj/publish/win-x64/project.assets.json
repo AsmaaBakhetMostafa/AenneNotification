@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Common.Logging/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging.Core": "3.3.1"
+        },
+        "compile": {
+          "lib/net40/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {}
+        }
+      },
+      "Common.Logging.Core/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Common.Logging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.Core.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR.Core/2.4.1": {
         "type": "package",
         "compile": {
@@ -2648,6 +2669,18 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Quartz/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "3.3.1"
+        },
+        "compile": {
+          "lib/net40/Quartz.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Quartz.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -4488,6 +4521,27 @@
       }
     },
     ".NETCoreApp,Version=v2.1/win-x64": {
+      "Common.Logging/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging.Core": "3.3.1"
+        },
+        "compile": {
+          "lib/net40/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {}
+        }
+      },
+      "Common.Logging.Core/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Common.Logging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.Core.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR.Core/2.4.1": {
         "type": "package",
         "compile": {
@@ -7130,6 +7184,18 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
+      "Quartz/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Common.Logging": "3.3.1"
+        },
+        "compile": {
+          "lib/net40/Quartz.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Quartz.dll": {}
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -9014,6 +9080,43 @@
     }
   },
   "libraries": {
+    "Common.Logging/3.3.1": {
+      "sha512": "Wv07G5iQ+yUHI3RWqXGFys3N7Gd7vx+OYFGw4kcqfCSoWMJJLNVZqB/zyqPC8kqxE7Ezcj1YrU7zGC3/gUXF3A==",
+      "type": "package",
+      "path": "common.logging/3.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.3.3.1.nupkg.sha512",
+        "common.logging.nuspec",
+        "lib/net35/Common.Logging.dll",
+        "lib/net35/Common.Logging.pdb",
+        "lib/net35/Common.Logging.xml",
+        "lib/net40/Common.Logging.dll",
+        "lib/net40/Common.Logging.pdb",
+        "lib/net40/Common.Logging.xml"
+      ]
+    },
+    "Common.Logging.Core/3.3.1": {
+      "sha512": "geJ4X7mjL/KDXNMfJbq6TnZfZ0bbEFi1HpS3Ayv09ZKxBgKaL0KysAw4k8w7DSE/nk0nDwkQEmStRxBIpBlsAQ==",
+      "type": "package",
+      "path": "common.logging.core/3.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "common.logging.core.3.3.1.nupkg.sha512",
+        "common.logging.core.nuspec",
+        "lib/net35/Common.Logging.Core.dll",
+        "lib/net35/Common.Logging.Core.pdb",
+        "lib/net35/Common.Logging.Core.xml",
+        "lib/net40/Common.Logging.Core.dll",
+        "lib/net40/Common.Logging.Core.pdb",
+        "lib/net40/Common.Logging.Core.xml",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.XML",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.dll",
+        "lib/portable-win+net40+sl40+wp7/Common.Logging.Core.pdb"
+      ]
+    },
     "Microsoft.AspNet.SignalR.Core/2.4.1": {
       "sha512": "da5vF7ERsXAfFz2RzyXIV2VZACxsw+NxWwKtwXuHde7xuApvI/njJhpzq+LkoYpOYfzPZ8BbccaZ1yOaw1AQ4w==",
       "type": "package",
@@ -11803,6 +11906,30 @@
         "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.1.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "Quartz/2.5.0": {
+      "sha512": "MkIOnlm6DO7BUzeDjxj6aNxCUHm9sb/n0qKpmhbz9VxRkW25do8/vT6yir23rh1uDvRsx5+me4Oki1ewzZFEIQ==",
+      "type": "package",
+      "path": "quartz/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/job_scheduling_data_2_0.xsd",
+        "lib/net35-client/Quartz.dll",
+        "lib/net35-client/Quartz.pdb",
+        "lib/net35-client/Quartz.xml",
+        "lib/net35/Quartz.dll",
+        "lib/net35/Quartz.pdb",
+        "lib/net35/Quartz.xml",
+        "lib/net40-client/Quartz.dll",
+        "lib/net40-client/Quartz.pdb",
+        "lib/net40-client/Quartz.xml",
+        "lib/net40/Quartz.dll",
+        "lib/net40/Quartz.pdb",
+        "lib/net40/Quartz.xml",
+        "quartz.2.5.0.nupkg.sha512",
+        "quartz.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -16962,6 +17089,7 @@
       "Microsoft.AspNet.SignalR.Core >= 2.4.1",
       "Microsoft.AspNetCore.App >= 2.1.14",
       "Microsoft.NETCore.App >= 2.1.14",
+      "Quartz >= 2.5.0",
       "RestSharp >= 106.10.1",
       "RestSharp.Serializers.NewtonsoftJson >= 106.10.1",
       "Serilog.AspNetCore >= 2.1.1",
@@ -17027,6 +17155,10 @@
             "version": "[2.1.14, )",
             "autoReferenced": true
           },
+          "Quartz": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          },
           "RestSharp": {
             "target": "Package",
             "version": "[106.10.1, )"
@@ -17076,8 +17208,38 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "Package 'Common.Logging 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Common.Logging",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Common.Logging.Core 3.3.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Common.Logging.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "Package 'Microsoft.AspNet.SignalR.Core 2.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.SignalR.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Quartz 2.5.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Quartz",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

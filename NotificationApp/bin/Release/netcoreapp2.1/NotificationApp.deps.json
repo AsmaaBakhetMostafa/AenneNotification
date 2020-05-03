@@ -27,6 +27,7 @@
           "Microsoft.AspNet.SignalR.Core": "2.4.1",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
+          "Quartz": "2.5.0",
           "RestSharp": "106.10.1",
           "RestSharp.Serializers.NewtonsoftJson": "106.10.1",
           "Serilog.AspNetCore": "2.1.1",
@@ -39,6 +40,31 @@
         },
         "compile": {
           "NotificationApp.dll": {}
+        }
+      },
+      "Common.Logging/3.3.1": {
+        "dependencies": {
+          "Common.Logging.Core": "3.3.1"
+        },
+        "runtime": {
+          "lib/net40/Common.Logging.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Common.Logging.dll": {}
+        }
+      },
+      "Common.Logging.Core/3.3.1": {
+        "runtime": {
+          "lib/net40/Common.Logging.Core.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Common.Logging.Core.dll": {}
         }
       },
       "Microsoft.AspNet.SignalR.Core/2.4.1": {
@@ -61,6 +87,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Quartz/2.5.0": {
+        "dependencies": {
+          "Common.Logging": "3.3.1"
+        },
+        "runtime": {
+          "lib/net40/Quartz.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Quartz.dll": {}
         }
       },
       "RestSharp/106.10.1": {
@@ -3345,6 +3385,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Common.Logging/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wv07G5iQ+yUHI3RWqXGFys3N7Gd7vx+OYFGw4kcqfCSoWMJJLNVZqB/zyqPC8kqxE7Ezcj1YrU7zGC3/gUXF3A==",
+      "path": "common.logging/3.3.1",
+      "hashPath": "common.logging.3.3.1.nupkg.sha512"
+    },
+    "Common.Logging.Core/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-geJ4X7mjL/KDXNMfJbq6TnZfZ0bbEFi1HpS3Ayv09ZKxBgKaL0KysAw4k8w7DSE/nk0nDwkQEmStRxBIpBlsAQ==",
+      "path": "common.logging.core/3.3.1",
+      "hashPath": "common.logging.core.3.3.1.nupkg.sha512"
+    },
     "Microsoft.AspNet.SignalR.Core/2.4.1": {
       "type": "package",
       "serviceable": true,
@@ -3358,6 +3412,13 @@
       "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "Quartz/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MkIOnlm6DO7BUzeDjxj6aNxCUHm9sb/n0qKpmhbz9VxRkW25do8/vT6yir23rh1uDvRsx5+me4Oki1ewzZFEIQ==",
+      "path": "quartz/2.5.0",
+      "hashPath": "quartz.2.5.0.nupkg.sha512"
     },
     "RestSharp/106.10.1": {
       "type": "package",

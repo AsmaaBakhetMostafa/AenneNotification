@@ -31,14 +31,14 @@
 //    .withUrl("http://doaaberam2020-001-site1.htempurl.com/tripNotification")
 //    .build();
 let connection = new signalR.HubConnectionBuilder()
-    .withUrl("http://doaaberam2020-001-site1.htempurl.com/AdminNotification",
+    .withUrl("http://localhost:6715/AdminNotification",
         { skipNegotiation: true, transport: signalR.HttpTransportType.WebSockets })
     //.configureLogging(LogLevel.Information)
     .build();
 connection.start()
     .then(res => {
         alert("stared");
-        var userID = 25;
+        var userID = 29;
         var UserType = 3;
         console.log('connection started assssssss');
         alert(connection.id);
@@ -348,16 +348,16 @@ connection.on("NotifiedUnAssignDriverToVehicle", (DriverID, VehicleID) => { //Dr
     alert("push to   driver that is UnAssign:" + DriverID + " " + "VehicleID : " + VehicleID);
 
 });
-connection.on("NotifiedAssignDriverToScheduledTrip", (DriverID, TripeId, TripScheduleId) => { //Driver 
+connection.on("NotifiedAssignDriverToScheduledTrip", (DriverID, TripScheduleId) => { //Driver 
     // alert("");
-    alert("push to   driver that is assied:" + DriverID + " " + "TripeId : " + TripeId + "" + "TripScheduleId:" + TripScheduleId);
+    alert("push to   driver that is assied:" + DriverID + " " + "TripScheduleId:" + TripScheduleId);
 
 });
 
 
-connection.on("NotifiedUnAssignDriverToScheduledTrip", (DriverID, TripeId, TripScheduleId) => { //Driver 
+connection.on("NotifiedUnAssignDriverToScheduledTrip", (DriverID, TripScheduleId) => { //Driver 
 
-    alert("push to   driver that is UnAssign:" + DriverID + " " + "TripeId : " + TripeId + "" + "TripScheduleId:" + TripScheduleId);
+    alert("push to   driver that is UnAssign:" + DriverID + " " +  "TripScheduleId:" + TripScheduleId);
 
 });
 

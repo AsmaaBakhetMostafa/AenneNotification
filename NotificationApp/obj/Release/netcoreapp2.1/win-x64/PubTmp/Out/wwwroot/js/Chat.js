@@ -38,7 +38,7 @@ let connection = new signalR.HubConnectionBuilder()
 connection.start()
     .then(res => {
         alert("stared");
-        var userID = 25;
+        var userID = 29;
         var UserType = 3;
         console.log('connection started assssssss');
         alert(connection.id);
@@ -348,16 +348,16 @@ connection.on("NotifiedUnAssignDriverToVehicle", (DriverID, VehicleID) => { //Dr
     alert("push to   driver that is UnAssign:" + DriverID + " " + "VehicleID : " + VehicleID);
 
 });
-connection.on("NotifiedAssignDriverToScheduledTrip", (DriverID, TripeId, TripScheduleId) => { //Driver 
+connection.on("NotifiedAssignDriverToScheduledTrip", (DriverID, TripScheduleId) => { //Driver 
     // alert("");
-    alert("push to   driver that is assied:" + DriverID + " " + "TripeId : " + TripeId + "" + "TripScheduleId:" + TripScheduleId);
+    alert("push to   driver that is assied:" + DriverID + " " + "TripScheduleId:" + TripScheduleId);
 
 });
 
 
-connection.on("NotifiedUnAssignDriverToScheduledTrip", (DriverID, TripeId, TripScheduleId) => { //Driver 
+connection.on("NotifiedUnAssignDriverToScheduledTrip", (DriverID, TripScheduleId) => { //Driver 
 
-    alert("push to   driver that is UnAssign:" + DriverID + " " + "TripeId : " + TripeId + "" + "TripScheduleId:" + TripScheduleId);
+    alert("push to   driver that is UnAssign:" + DriverID + " " +  "TripScheduleId:" + TripScheduleId);
 
 });
 

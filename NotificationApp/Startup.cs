@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NotificationApp.Hubs;
+using NotificationApp.Job;
 using Serilog;
 
 namespace NotificationApp
@@ -60,6 +61,7 @@ namespace NotificationApp
 
             services.AddSignalR();
             services.AddSignalR(config => config.EnableDetailedErrors = true);
+           // ScheduleTripBeforeTwoHoursJob.TaskServices();
 
         }
 

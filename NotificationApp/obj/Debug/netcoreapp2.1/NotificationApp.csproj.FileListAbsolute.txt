@@ -208,3 +208,4 @@ D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Debug\netc
 D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.pdb
 D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.csproj.CopyComplete
 D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Debug\netcoreapp2.1\Razor\Pages\MapLocation.cshtml.g.cs
+D:\VenuseraWork\ProjectAenne\AenneNotificationApp\NotificationApp\obj\Debug\netcoreapp2.1\NotificationApp.csprojAssemblyReference.cache
