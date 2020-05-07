@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NotificationApp.Job
 {
-    public class TripBeforeTwoHoursJob : IJob
+    public class TripBefore24HoursJob : IJob
     {
         NotificationAPIConsume _NotificationAPIConsume = new NotificationAPIConsume();
         //NotificationHelper _NotificationHelper = new NotificationHelper();
@@ -24,9 +24,9 @@ namespace NotificationApp.Job
             {
                 IList<TripsDto> AllShecudledTrips = new List<TripsDto>();
                 //get All Driver assign for Scheduled Trip 
-               // RequestData Data = _NotificationAPIConsume.GetAllSheduledDriver();
+                // RequestData Data = _NotificationAPIConsume.GetAllSheduledDriver();
                 AllShecudledTrips = _NotificationAPIConsume.GetAllSheduledDriver();
-                AllShecudledTrips = AllShecudledTrips.Where(x => x.Trip_Date.AddHours(2).Date == DateTime.Now.Date).ToList();
+                AllShecudledTrips = AllShecudledTrips.Where(x => x.Trip_Date.AddHours(24).Date == DateTime.Now.Date).ToList();
                 //create Notification
                 foreach (var Trip in AllShecudledTrips)
                 {
@@ -50,7 +50,7 @@ namespace NotificationApp.Job
                         };
                         notification.NotificationDestinations.Add(Dest);
                         ///create Notification
-                         _NotificationAPIConsume.CreateNotification(notification);
+                        _NotificationAPIConsume.CreateNotification(notification);
 
                         //send notification
                         _NotificationHub.ReminderNotification(Trip.Driver_Id.ToString(), Trip.Trip_Schedule_Id.ToString());

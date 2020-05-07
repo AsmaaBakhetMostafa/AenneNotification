@@ -61,8 +61,9 @@ namespace NotificationApp
 
             services.AddSignalR();
             services.AddSignalR(config => config.EnableDetailedErrors = true);
-           // ScheduleTripBeforeTwoHoursJob.TaskServices();
-
+            //services.AddSingleton<ScheduleTripBeforeTwoHoursJob>();
+           // services.AddSingleton<ScheduleTripBefore12HoursJob>();
+           // services.AddSingleton<ScheduleTripBefore24HoursJob>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -105,6 +106,7 @@ namespace NotificationApp
             //});
 
             app.UseMvc();
+            
         }
     }
 }

@@ -31,7 +31,7 @@
 //    .withUrl("http://doaaberam2020-001-site1.htempurl.com/tripNotification")
 //    .build();
 let connection = new signalR.HubConnectionBuilder()
-    .withUrl("http://doaaberam2020-001-site1.htempurl.com/AdminNotification",
+    .withUrl("http://venusera-001-site8.atempurl.com/AdminNotification",
         { skipNegotiation: true, transport: signalR.HttpTransportType.WebSockets })
     //.configureLogging(LogLevel.Information)
     .build();
@@ -329,8 +329,8 @@ document.getElementById("ClientSchudleTrip").addEventListener("click", event => 
     debugger;
     const user = document.getElementById("userName").value;
     const message = document.getElementById("userMessage").value;
-    connection.invoke("AdminNotifications", 1, "Client", 40, 3).then(res => {
-        alert("Client make Complaint");
+    connection.invoke("AdminNotifications", 41, "Client", 77, 4).then(res => {
+        alert("Client make request");
     });//catch(err => console.error(err.toString()));
     // connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
     event.preventDefault();

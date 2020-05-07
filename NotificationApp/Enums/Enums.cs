@@ -23,8 +23,8 @@ namespace NotificationApp.Enums
     }
     public enum DestinationUserType
     {
-        Admin = 1,
-        SuperAdmin = 2,
+        SuperAdmin = 1,
+        Admin = 2,
         Driver = 3,
         Client = 4
     }

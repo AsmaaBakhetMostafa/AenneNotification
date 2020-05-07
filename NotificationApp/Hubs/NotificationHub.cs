@@ -43,10 +43,9 @@ namespace NotificationApp.Hubs
             await Clients.User(User).SendAsync("ReciveNotification",message);
         }
 
-        public void UnreadNotification(int id)
+        public void UnreadNotification(int id, int userTypeId, int UserId, bool IsRead)
         {
-
-            _NotificationAPIConsume.SetUnreadNotification(id);
+            _NotificationAPIConsume.SetUnreadNotification(id, userTypeId, UserId,IsRead);
         }
         public async Task AdminNotifications(int NotificationID, string UserType, int TypeID, int Type)
         {
@@ -78,13 +77,22 @@ namespace NotificationApp.Hubs
                 model.Notification_Link = AdminBaseUrl + "Trips/ScheduledTrips/ViewScheduleTrip?ScheduleId=" + TypeID;
                 _NotificationAPIConsume.SetNotificationLink(model);
             }
+            if (Type == (int)NotificationType.RequestCar)
+            {
+                NotificationModel model = new NotificationModel();
+
+                model.Notification_Id = NotificationID;
+                // in case Complaint 
+                model.Notification_Link = "";
+                _NotificationAPIConsume.SetNotificationLink(model);
+            }
             await Clients.All.SendAsync("AdminNotifications",_NotificationHelper.UserNotifications(),
                NotificationID, UserType, TypeID, Type);
         }
-        public void AdminNotificationsCount(int UserId)
+        public void AdminNotificationsCount(int UserId,int UserTypeId)
         {
 
-            Clients.All.SendAsync("AdminNotificationsCount",_NotificationHelper.GetSpecificUserNotificationsCount(UserId));
+            Clients.All.SendAsync("AdminNotificationsCount",_NotificationHelper.GetSpecificUserNotificationsCount(UserId, UserTypeId));
         }
         //////////////////////////////////////////////////////////////////////////////
 
@@ -123,7 +131,7 @@ namespace NotificationApp.Hubs
                     Notification_Link = "",
                     Notification_Description = "تم تخصيص هذا السائق علي سياره رقم " + VehicleID,
                     Notification_FromUserId = UserId,
-                    Notification_TimeStamp = DateTime.Now,
+                    Notification_TimeStamp = MyDateTime.Now,
                     Notification_FromUser_TypeId = Notification_FromUser_TypeId,
                 };
                 notification.NotificationDestinations.Add(Dest);
@@ -171,7 +179,7 @@ namespace NotificationApp.Hubs
                     Notification_Link = "",
                     Notification_Description = "تم الغاء تخصيص هذا السائق علي سياره رقم " + VehicleID,
                     Notification_FromUserId = UserId,
-                    Notification_TimeStamp = DateTime.Now,
+                    Notification_TimeStamp = MyDateTime.Now,
                     Notification_FromUser_TypeId = Notification_FromUser_TypeId,
                 };
                 notification.NotificationDestinations.Add(Dest);
@@ -219,7 +227,7 @@ namespace NotificationApp.Hubs
                     Notification_Link = "",
                     Notification_Description = "تم تخصيص هذا السائق علي رحلة رقم " + TripScheduleId,
                     Notification_FromUserId = UserId,
-                    Notification_TimeStamp = DateTime.Now,
+                    Notification_TimeStamp = MyDateTime.Now,
                     Notification_FromUser_TypeId = Notification_FromUser_TypeId,
                 };
                 notification.NotificationDestinations.Add(Dest);
@@ -266,7 +274,7 @@ namespace NotificationApp.Hubs
                     Notification_Link = "",
                     Notification_Description = "تم الغاء تخصيص هذا السائق علي رحلة رقم " + TripScheduleId,
                     Notification_FromUserId = UserId,
-                    Notification_TimeStamp = DateTime.Now,
+                    Notification_TimeStamp = MyDateTime.Now,
                     Notification_FromUser_TypeId = Notification_FromUser_TypeId,
                 };
                 notification.NotificationDestinations.Add(Dest);
@@ -301,7 +309,10 @@ namespace NotificationApp.Hubs
                 }
             }
         }
-
+        public string AdminAllNotifications(int userTypeId, int destinationId)
+        {
+            return _NotificationHelper.SpecificUserNotifications(userTypeId, destinationId);
+        }
         public async Task OnConnectedAsync(string UserID, int UserType)
         {
             //string userName = Context.User.Identity.Name;

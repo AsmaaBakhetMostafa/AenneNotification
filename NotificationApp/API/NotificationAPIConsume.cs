@@ -13,8 +13,11 @@ namespace NotificationApp.API
 {
     public class NotificationAPIConsume
     {
+       
         private RestClient client = new RestClient("http://aenee.app.192-185-7-211.hgws27.hgwin.temp.domains/Api/"); //("http://localhost:49950/Api/");
-        public  IList<TripsDto> GetAllSheduledDriver()
+        private RestClient client1 = new RestClient("http://aenee.app.192-185-7-211.hgws27.hgwin.temp.domains/"); //("http://localhost:49950/");
+
+        public IList<TripsDto> GetAllSheduledDriver()
         {
             var request = new RestRequest("Venusera/Trips/GetAcceptedScheduledTrips", Method.GET) { RequestFormat = DataFormat.Json };
 
@@ -38,11 +41,15 @@ namespace NotificationApp.API
             var content = response.Content; // raw content as string  
         }
       
-        public NotificationDto SetUnreadNotification(int id)
+        public NotificationDto SetUnreadNotification(int id, int userTypeId, int UserId, bool IsRead)
         {
-            var request = new RestRequest("Venusera/Notifications/UpdateIsReadNotification/{id}", Method.GET) { RequestFormat = DataFormat.Json };
+            var request = new RestRequest("Venusera/Notifications/UpdateIsReadNotification/{id}/{userTypeId}/{UserId}/{IsRead}", Method.GET) { RequestFormat = DataFormat.Json };
 
             request.AddParameter("id", id, ParameterType.UrlSegment);
+            request.AddParameter("userTypeId", userTypeId, ParameterType.UrlSegment);
+            request.AddParameter("UserId", UserId, ParameterType.UrlSegment);
+            request.AddParameter("IsRead", IsRead, ParameterType.UrlSegment);
+
             var response = client.Execute<NotificationDto>(request);
 
             //if (response.Data == null)
@@ -62,11 +69,26 @@ namespace NotificationApp.API
 
             return response.Data;
         }
-        public IList<NotificationDto> GetAllUnreadSpecificAdminNotification(int UserId)
+        public IList<NotificationDto> GetAllNotificationForSpecficUser(int userTypeId,int destinationId)
         {
-            var request = new RestRequest("Venusera/Notifications/GetAllUnreadSpecificAdminNotification/{UserId}", Method.GET) { RequestFormat = DataFormat.Json };
+            var request = new RestRequest("userType/{userTypeId}/destination/{destinationId}", Method.GET) { RequestFormat = DataFormat.Json };
+            request.AddParameter("userTypeId", userTypeId, ParameterType.UrlSegment);
+            request.AddParameter("destinationId", destinationId, ParameterType.UrlSegment);
+
+            var response = client1.Execute<IList<NotificationDto>>(request);
+
+            //if (response.Data == null)
+            //    throw new Exception(response.ErrorMessage);
+
+            return response.Data;
+        }
+        public IList<NotificationDto> GetAllUnreadSpecificAdminNotification(int UserId,int UserTypeId)
+        {
+            var request = new RestRequest("Venusera/Notifications/GetAllUnreadSpecificAdminNotification/{UserId}/{UserTypeId}", Method.GET) { RequestFormat = DataFormat.Json };
 
             request.AddParameter("UserId", UserId, ParameterType.UrlSegment);
+            request.AddParameter("UserTypeId", UserTypeId, ParameterType.UrlSegment);
+
             var response = client.Execute<IList<NotificationDto>>(request);
 
             //if (response.Data == null)

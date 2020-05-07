@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="doaaberam2020-001-site1" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="venusera-001-site8" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\VenuseraWork\\ProjectAenne\\AenneNotificationApp\\NotificationApp\\obj\\Release\\netcoreapp2\.1\\win-x64\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>
